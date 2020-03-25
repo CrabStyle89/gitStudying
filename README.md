@@ -6,6 +6,8 @@ Solve the longest common prefix problem on leetcode in C#. Create a github proje
 
 
 Solution:
+
+
   public class Solution
     {
         public string LongestCommonPrefix(string[] strs)
