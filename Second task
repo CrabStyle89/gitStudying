@@ -1,0 +1,10 @@
+Task: 
+
+In a separate post explain what the computational complexity of the algorithm is, and why.
+
+
+Solution:
+
+I think the computational complexity of my algoritm is O(M*N). Where M is a number of letters in first word and N is a number of wotds at all.
+If we take 1 million inputing words we can ignore M at all, than the computational complexity would be O(N). This is a linear complexity. 
+But if we take  a few words the computational complexity would be O(N*N). All depend of number of inputing words. 
