@@ -1,0 +1,29 @@
+Task: 
+
+Extend the program to calculate the amount of green pixels in the image (R=0, B=0, G=255). Print that number to console, 
+along with the image’s width and height. Upload the update to the same project on github. Update the README.md with new 
+functionality and new screenshot.
+
+
+Solution:
+
+class Program
+    {
+        static void Main(string[] args)
+        {
+            int count = 0;                                       // create the counter for counting number of green pixels
+            Image img = Image.FromFile("C:\\Users\\Sinistraz\\Documents\\C#Repos\\1.1.jpg"); // load the image
+            for(int i = 0; i <= img.Width-1; i++)                //pictures as massive 2x2 
+                        for (int j = 0; j <= img.Height-1; j++)
+            {
+                    Color c = (img as Bitmap).GetPixel(i, j);   // I image turn to bitmap for geting acces to each pixel, c is a color struct 
+                    if (c.R == 0 && c.B == 0 && c.G == 255)     // checking for green pixel
+                        count++;                                //icrementing our counter
+                    
+                    
+            }
+            Console.WriteLine($"The number of green pixels is: {count}");
+            Console.ReadLine();
+        }
+    }
+
