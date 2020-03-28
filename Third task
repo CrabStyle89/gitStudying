@@ -1,3 +1,19 @@
 Third : Create a C# project that opens an image from file and prints it’s height and width to console. Upload the code to github.
         Add a README.md that explains what the program does, and a screenshot with an example: image, and console with program’s output. 
         And a link in a post in this doc.
+
+
+Solution:
+
+
+ class Program
+    {
+        static void Main(string[] args)
+        {
+            Image img = Image.FromFile("C:\\Users\\Sinistraz\\Documents\\C#Repos\\1.1.jpg"); // load the image
+            Console.WriteLine(img.Size);                                                     //casual size of picture
+            Console.ReadLine();
+        }
+    }
+
+P.S. Sorry for so casual solition. I have a little practice with files and Windows Forms at all.
